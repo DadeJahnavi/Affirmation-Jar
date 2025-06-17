@@ -17,7 +17,7 @@ const surpriseQuotes = [
   `<div class="quote-title">You are doing your best, and that is more than enough.</div><div class="quote-body">You are doing your best, and that is more than enough. 🌟</div>`,
   `<div class="quote-title">It’s okay to not have everything figured out.</div><div class="quote-body">It’s okay to not have everything figured out. 🌸</div>`,
   `<div class="quote-title">You are stronger than you think.</div><div class="quote-body">You are stronger than you think. 💪</div>`,
- `<div class="quote-title">You bring light into this world.</div><div class="quote-body">You bring light into this world. 💖</div>`,
+  `<div class="quote-title">You bring light into this world.</div><div class="quote-body">You bring light into this world. 💖</div>`,
   `<div class="quote-title">You deserve love, joy, and rest.</div><div class="quote-body">You deserve love, joy, and rest. 💕</div>`,
   `<div class="quote-title">You don’t have to carry everything alone.</div><div class="quote-body">You don’t have to carry everything alone. 🌈</div>`,
   `<div class="quote-title">You are growing, even if you can’t see it yet.</div><div class="quote-body">You are growing, even if you can’t see it yet. 🌱</div>`,
@@ -62,7 +62,6 @@ const surpriseQuotes = [
   `<div class="quote-title">You deserve kindness — from others and from yourself.</div><div class="quote-body">You deserve kindness — from others and from yourself. 💕</div>`,
   `<div class="quote-title">You are still allowed to dream.</div><div class="quote-body">You are still allowed to dream. 🌠</div>`,
   `<div class="quote-title">You are enough, over and over again.</div><div class="quote-body">You are enough, over and over again. 💖</div>`
-
 ];
 
 function showDailyQuote() {
@@ -90,14 +89,12 @@ function animateButterfly() {
   }
 
   function fly() {
-    // Move gradually toward target position
     x += (targetX - x) * 0.02;
     y += (targetY - y) * 0.02;
 
     butterfly.style.left = `${x}px`;
     butterfly.style.top = `${y}px`;
 
-    // If close enough to target, pick a new one
     if (Math.abs(targetX - x) < 1 && Math.abs(targetY - y) < 1) {
       setNewTarget();
     }
@@ -105,7 +102,6 @@ function animateButterfly() {
     requestAnimationFrame(fly);
   }
 
-  // Initialize
   butterfly.style.left = `${x}px`;
   butterfly.style.top = `${y}px`;
   setNewTarget();
