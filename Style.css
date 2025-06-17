@@ -165,6 +165,26 @@ h2 {
     font-size: 1rem;
     padding: 10px 24px;
   }
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #2d2d2d;
+    color: #fff;
+  }
+
+  .jar-container, .quoteBox {
+    background-color: #3a3a3a;
+    border-color: #5a3a6d;
+    color: #eee;
+  }
+
+  .surprise-btn {
+    background-color: #9b4ede;
+  }
+
+  .credit-badge {
+    color: #ccc;
+  }
+}
 
   h2 {
     font-size: 1.2rem;
