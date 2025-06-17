@@ -38,4 +38,6 @@ The Affirmation Jar is a calming web experience that offers daily motivational q
 🔗 [View it live on GitHub Pages](https://your-username.github.io/affirmation-jar/)  
 
 > “You are enough, exactly as you are.” 🌸
+🛡 This project is designed and maintained by **Jahnavi**.  
+Feel free to fork and remix with credit!
 
