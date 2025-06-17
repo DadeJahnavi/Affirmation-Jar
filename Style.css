@@ -3,8 +3,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
+  overflow-x: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +33,7 @@ body {
   border: 2px dashed #dcb4f9;
   border-radius: 40px 40px 30px 30px;
   padding: 40px 30px;
-  width: 100%;
+  width: 90%;
   max-width: 500px;
   margin: 0 auto;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
@@ -60,9 +60,9 @@ h2 {
   font-size: 1.05rem;
   color: #4c1c6b;
   box-shadow: 0 4px 12px rgba(0,0,0,0.04);
-  width: 400px;           
-  min-height: 80px;       
-  max-width: 90%;
+  width: 90%;              
+  max-width: 420px;        
+  min-height: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -108,8 +108,9 @@ h2 {
   z-index: 999;
   pointer-events: none;
   animation: flap 1s infinite ease-in-out;
+  transition: transform 0.5s ease;  
 }
-transition: transform 0.5s ease;
+
 @keyframes flap {
   0%, 100% { transform: scale(1) rotate(0deg); }
   50% { transform: scale(1.1) rotate(3deg); }
@@ -123,4 +124,21 @@ transition: transform 0.5s ease;
 
 .quote-body {
   margin-top: 8px;
+}
+
+/* -------------------- Mobile Tweaks -------------------- */
+@media (max-width: 400px) {
+  .main-heading {
+    font-size: 2rem;
+  }
+
+  .surprise-btn {
+    padding: 10px 24px;
+    font-size: 1rem;
+  }
+
+  .quoteBox {
+    font-size: 0.95rem;
+    padding: 14px 16px;
+  }
 }
