@@ -116,6 +116,13 @@ h2 {
   50% { transform: scale(1.1) rotate(3deg); }
 }
 
+.floating-butterfly {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 1.5rem;
+}
+
+
 /* -------------------- Quote Text -------------------- */
 .quote-title {
   font-weight: bold;
