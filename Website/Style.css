@@ -1,0 +1,116 @@
+/* -------------------- Global Styles -------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #fceeff 0%, #e9f4ff 100%);
+  background-size: cover;
+  transition: background 0.3s ease-in-out;
+}
+
+/* -------------------- Wrapper & Heading -------------------- */
+.wrapper {
+  text-align: center;
+  padding: 20px;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+  color: #803c9e;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px rgba(128, 60, 158, 0.2);
+}
+
+/* -------------------- Jar Container -------------------- */
+.jar-container {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(20px);
+  border: 2px dashed #dcb4f9;
+  border-radius: 40px 40px 30px 30px;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  animation: floatJar 8s ease-in-out infinite;
+}
+
+@keyframes floatJar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* -------------------- Headings -------------------- */
+h2 {
+  color: #803c9e;
+  margin: 20px 0 10px;
+}
+
+/* -------------------- Quote Box -------------------- */
+.quoteBox {
+  background-color: #ffeafc;
+  border-radius: 15px;
+  padding: 18px 22px;
+  margin: 10px auto 20px;
+  font-size: 1.05rem;
+  color: #4c1c6b;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  width: 400px;           
+  min-height: 80px;       
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* -------------------- Button -------------------- */
+.surprise-btn {
+  margin-top: 10px;
+  padding: 12px 35px;
+  background-color: #803c9e;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.surprise-btn:hover {
+  background-color: #6c2f85;
+}
+
+/* -------------------- Butterfly -------------------- */
+.butterfly {
+  position: absolute;
+  width: 60px;
+  height: auto;
+  font-size: 2.5rem;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  pointer-events: none;
+  animation: flap 1s infinite ease-in-out;
+}
+transition: transform 0.5s ease;
+@keyframes flap {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.1) rotate(3deg); }
+}
+
+/* -------------------- Quote Text -------------------- */
+.quote-title {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.quote-body {
+  margin-top: 8px;
+}
