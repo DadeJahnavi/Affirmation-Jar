@@ -24,6 +24,17 @@ body {
   color: #803c9e;
   margin-bottom: 30px;
   text-shadow: 1px 1px 3px rgba(128, 60, 158, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.floating-butterfly {
+  font-size: 1.5rem;
+  margin-left: 6px;
+  margin-top: 2px;
 }
 
 /* -------------------- Jar Container -------------------- */
@@ -60,24 +71,14 @@ h2 {
   font-size: 1.05rem;
   color: #4c1c6b;
   box-shadow: 0 4px 12px rgba(0,0,0,0.04);
-  width: 90%;              
-  max-width: 420px;        
+  width: 90%;
+  max-width: 420px;
   min-height: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease-in-out;
-}
-
-.credit-badge {
-  position: fixed;
-  bottom: 10px;
-  right: 15px;
-  font-size: 0.75rem;
-  color: #c49cc9;
-  opacity: 0.7;
-  font-family: 'Segoe UI', sans-serif;
 }
 
 /* -------------------- Button -------------------- */
@@ -108,20 +109,13 @@ h2 {
   z-index: 999;
   pointer-events: none;
   animation: flap 1s infinite ease-in-out;
-  transition: transform 0.5s ease;  
+  transition: transform 0.5s ease;
 }
 
 @keyframes flap {
   0%, 100% { transform: scale(1) rotate(0deg); }
   50% { transform: scale(1.1) rotate(3deg); }
 }
-
-.floating-butterfly {
-  display: inline-block;
-  margin-left: 6px;
-  font-size: 1.5rem;
-}
-
 
 /* -------------------- Quote Text -------------------- */
 .quote-title {
@@ -133,30 +127,28 @@ h2 {
   margin-top: 8px;
 }
 
-/* -------------------- Mobile Tweaks -------------------- */
-@media (max-width: 400px) {
-  .main-heading {
-    font-size: 2rem;
-  }
-
-  .surprise-btn {
-    padding: 10px 24px;
-    font-size: 1rem;
-  }
-
-  .quoteBox {
-    font-size: 0.95rem;
-    padding: 14px 16px;
-  }
+/* -------------------- Footer -------------------- */
+.credit-badge {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  font-size: 0.75rem;
+  color: #c49cc9;
+  opacity: 0.7;
+  font-family: 'Segoe UI', sans-serif;
 }
 
+/* -------------------- Mobile Tweaks -------------------- */
 @media (max-width: 480px) {
   .main-heading {
-    font-size: 1.7rem;
-    display: flex;
+    font-size: 1.8rem;
     flex-direction: column;
-    align-items: center;
-    gap: 5px;
+    gap: 6px;
+  }
+
+  .floating-butterfly {
+    font-size: 1.4rem;
+    margin-left: 0;
   }
 
   .jar-container {
@@ -178,4 +170,3 @@ h2 {
     font-size: 1.2rem;
   }
 }
-
