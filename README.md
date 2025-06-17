@@ -37,12 +37,5 @@ The Affirmation Jar is a calming web experience that offers daily motivational q
 
 🔗 [View it live on GitHub Pages](https://your-username.github.io/affirmation-jar/)  
 
-## 🪄 Ideas for the Future
-
-- ✨ Sparkle animation trail for the butterfly  
-- 🎶 Soft ambient music  
-- 📦 Add more categories (gratitude, confidence, rest, etc.)  
-- 🔄 Daily affirmation scheduling via local storage  
-
 > “You are enough, exactly as you are.” 🌸
 
