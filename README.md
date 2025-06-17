@@ -35,7 +35,7 @@ The Affirmation Jar is a calming web experience that offers daily motivational q
 
 ## 🌐 Live Demo
 
-🔗 [View it live on Netlify]()  
+🔗 [View it live on Netlify](https://affirmation-jar.netlify.app/)  
 
 > “You are enough, exactly as you are.” 🌸
 🛡 This project is designed and maintained by **Jahnavi**.  
